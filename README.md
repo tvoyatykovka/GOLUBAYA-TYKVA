@@ -1,11 +1,9 @@
-# GOLUBAYA-TYKVA
-short of me
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎃 pumpkin repo · cutest profile</title>
+  <title>🎃 pumpkin-repo · cute README + steps</title>
   <!-- Font Awesome Icons (free) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
@@ -16,7 +14,7 @@ short of me
     }
 
     body {
-      background: #1e1a17;  /* deep autumn night */
+      background: #1e1a17; /* deep autumn night */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,7 +25,7 @@ short of me
 
     /* 🎃 PUMPKIN CARD — warm, glowy, cute */
     .pumpkin-card {
-      max-width: 900px;
+      max-width: 920px;
       width: 100%;
       background: linear-gradient(145deg, #fbe9d2 0%, #f7d9b0 100%);
       backdrop-filter: blur(8px);
@@ -43,7 +41,6 @@ short of me
       overflow: hidden;
     }
 
-    /* tiny pumpkin seeds / sparkles */
     .pumpkin-card::before {
       content: "✦ ✧ ✦ ✧ ✦";
       position: absolute;
@@ -110,7 +107,6 @@ short of me
       transform: scale(1.02) rotate(-2deg);
     }
 
-    /* pumpkin status ring */
     .status-ring {
       position: absolute;
       bottom: 6px;
@@ -167,7 +163,7 @@ short of me
       color: #c96f3a;
     }
 
-    /* cute bio */
+    /* bio */
     .bio {
       margin: 1.2rem 0 1.5rem 0;
       font-size: 1.1rem;
@@ -195,7 +191,7 @@ short of me
       font-weight: 600;
     }
 
-    /* social links — pumpkin style */
+    /* social links */
     .social-links {
       display: flex;
       flex-wrap: wrap;
@@ -240,7 +236,7 @@ short of me
       color: #c96f3a;
     }
 
-    /* stats — warm pumpkiny */
+    /* stats */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -290,7 +286,7 @@ short of me
       color: #b66d3a;
     }
 
-    /* projects — cute pumpkin cards */
+    /* projects */
     .project-section {
       margin: 2rem 0 1.2rem 0;
     }
@@ -380,7 +376,99 @@ short of me
       color: #b66d3a;
     }
 
-    /* footer CTA — pumpkin spice */
+    /* STEPS SECTION — new! */
+    .steps-section {
+      margin: 2rem 0 1.5rem 0;
+      background: rgba(255, 235, 210, 0.6);
+      backdrop-filter: blur(4px);
+      border-radius: 2.5rem 1rem 2.5rem 1rem;
+      padding: 1.5rem 1.8rem;
+      border: 3px solid #d68f5c;
+      box-shadow: inset 0 0 20px #fde5c8, 0 6px 0 #b57646;
+    }
+
+    .steps-section h3 {
+      color: #3d2b1c;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 0 #f5cba0;
+    }
+
+    .steps-section h3 i {
+      color: #c96f3a;
+      font-size: 1.8rem;
+    }
+
+    .step-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      counter-reset: step-counter;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: #fbe9d2;
+      padding: 0.8rem 1.2rem;
+      border-radius: 60px 20px 60px 20px;
+      border: 2px solid #d68f5c;
+      box-shadow: 0 3px 0 #b57646;
+      transition: all 0.15s ease;
+    }
+
+    .step-item:hover {
+      transform: translateX(6px);
+      background: #fde5c8;
+      border-color: #b66d3a;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5b06b;
+      color: #2f1f12;
+      font-weight: 800;
+      font-size: 1.1rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      border: 3px solid #b57646;
+      box-shadow: 0 3px 0 #8f5c34;
+      flex-shrink: 0;
+    }
+
+    .step-content {
+      flex: 1;
+      color: #3d2b1c;
+      font-weight: 500;
+      font-size: 0.98rem;
+      line-height: 1.5;
+      padding-top: 0.1rem;
+    }
+
+    .step-content code {
+      background: #f9c89b;
+      padding: 0.1rem 0.6rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      border: 1px solid #d68f5c;
+      color: #4a2f1e;
+      font-weight: 600;
+    }
+
+    .step-content i {
+      color: #c96f3a;
+      margin-right: 4px;
+    }
+
+    /* footer */
     .footer-cta {
       margin-top: 2.2rem;
       display: flex;
@@ -446,9 +534,11 @@ short of me
       .profile-header { gap: 1rem; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
       .bio { font-size: 0.95rem; padding: 0.6rem 1rem; }
+      .step-item { flex-wrap: wrap; }
+      .step-number { width: 1.8rem; height: 1.8rem; font-size: 0.9rem; }
     }
 
-    /* extra cute — floating leaves (just for fun) */
+    /* floating leaves */
     .pumpkin-card .leaf {
       position: absolute;
       font-size: 2.4rem;
@@ -473,8 +563,8 @@ short of me
         <span class="status-ring"><span class="status-dot"></span></span>
       </div>
       <div class="name-title">
-        <h1>🎃 pumpkin dev</h1>
-        <span class="badge"><i class="fas fa-seedling"></i> spooky · cute · full-stack</span>
+        <h1>🎃 pumpkin-repo</h1>
+        <span class="badge"><i class="fas fa-seedling"></i> cute · full-stack · harvest</span>
         <div style="margin-top: 8px; display: flex; gap: 12px; flex-wrap: wrap;">
           <span style="color:#4a2f1e; font-weight:600; background:#f9dbb8; padding:0.1rem 0.8rem; border-radius:40px; border:1px solid #d68f5c;">
             <i class="fas fa-map-pin" style="color:#c96f3a;"></i> autumn · cozy
@@ -486,7 +576,7 @@ short of me
       </div>
     </div>
 
-    <!-- BIO 🍂 -->
+    <!-- BIO -->
     <div class="bio">
       <i class="fas fa-pumpkin"></i> 
       building <strong>pumpkin-spiced</strong> apps & tools · <strong>React</strong> + <strong>Rust</strong> · 
@@ -525,7 +615,7 @@ short of me
       </div>
     </div>
 
-    <!-- PROJECTS (pumpkin themed) -->
+    <!-- PROJECTS -->
     <div class="project-section">
       <h3><i class="fas fa-pumpkin"></i> pumpkin patches</h3>
       <div class="project-grid">
@@ -550,6 +640,37 @@ short of me
       </div>
     </div>
 
+    <!-- ⭐ STEPS SECTION — HOW TO USE THIS REPO -->
+    <div class="steps-section">
+      <h3><i class="fas fa-footsteps"></i> steps to stand out</h3>
+      <div class="step-list">
+        <div class="step-item">
+          <span class="step-number">1</span>
+          <span class="step-content"><i class="fas fa-pen-fancy"></i> <strong>Fork</strong> this repo or copy the <code>README.md</code> template.</span>
+        </div>
+        <div class="step-item">
+          <span class="step-number">2</span>
+          <span class="step-content"><i class="fas fa-image"></i> Replace the avatar image (line ~120) with your own GitHub picture.</span>
+        </div>
+        <div class="step-item">
+          <span class="step-number">3</span>
+          <span class="step-content"><i class="fas fa-edit"></i> Update <strong>name, bio, stats</strong> and <strong>social links</strong> to match your profile.</span>
+        </div>
+        <div class="step-item">
+          <span class="step-number">4</span>
+          <span class="step-content"><i class="fas fa-folder-tree"></i> Customize the <strong>project cards</strong> — add your own repos and tags.</span>
+        </div>
+        <div class="step-item">
+          <span class="step-number">5</span>
+          <span class="step-content"><i class="fas fa-code"></i> Paste the HTML into your repo’s <code>index.html</code> or use as a README (with GitHub Pages).</span>
+        </div>
+        <div class="step-item">
+          <span class="step-number">6</span>
+          <span class="step-content"><i class="fas fa-rocket"></i> Deploy with <strong>GitHub Pages</strong> — go to Settings > Pages, select branch, and you’re live! 🎃</span>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <div class="footer-cta">
       <a href="#" class="cta-button"><i class="fas fa-pumpkin"></i> follow @pumpkinDev</a>
@@ -562,7 +683,7 @@ short of me
 
   <script>
     (function() {
-      // little interactive sparkle on stats
+      // interactive sparkle on stats
       const stats = document.querySelectorAll('.stat-number');
       stats.forEach(el => {
         el.addEventListener('mouseenter', function() {
@@ -575,7 +696,7 @@ short of me
           this.style.background = '#fbe9d2';
         });
       });
-      console.log('🎃 pumpkin profile · cuteness overload!');
+      console.log('🎃 pumpkin repo · ready to stand out!');
     })();
   </script>
 </body>
